@@ -1,0 +1,137 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 1.5rem;
+}
+
+ul li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Bouton Dark Mode */
+#dark-mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #555;
+}
+
+/* Mode Sombre */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode section {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: #ddd;
+}
