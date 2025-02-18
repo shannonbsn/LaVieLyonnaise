@@ -1,13 +1,11 @@
-// Select the button
 const toggleButton = document.getElementById('dark-mode-toggle');
 
-// Add event listener to the button
 toggleButton.addEventListener('click', () => {
-    // Toggle the dark mode class on the body
+   
     document.body.classList.toggle('dark-mode');
 });
 
-// Optional: Save the user's preference in localStorage
+
 if (localStorage.getItem('dark-mode') === 'enabled') {
     document.body.classList.add('dark-mode');
 }
